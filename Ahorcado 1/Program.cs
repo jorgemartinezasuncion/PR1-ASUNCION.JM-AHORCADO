@@ -12,10 +12,9 @@ namespace Ahorcado_1
 
 
         {
-            Console.SetWindowSize(130,58);
+            Console.SetWindowSize(170,58);
         
             Console.ForegroundColor = ConsoleColor.Green;
-
              Console.WriteLine(" _____________  ______________________________________________ ");
              Console.WriteLine("___    |__  / / /_  __ \\__  __ \\_  ____/__    |__  __ \\_  __ \\ ");
              Console.WriteLine("__  /| |_  /_/ /_  / / /_  /_/ /  /    __  /| |_  / / /  / / / ");
@@ -55,46 +54,62 @@ namespace Ahorcado_1
             if (a.Vida == 0)
             {
                     Console.Clear();
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
                                                                            
-                    Console.WriteLine("                              ,!MMMMMMM!,                     MM MM  ,.  ");
-                    Console.WriteLine("      ., .M                .MMMMMMMMMMMMMMMM.,          'MM.  MM MM .M'  ");
-                    Console.WriteLine("    . M: M;  M          .MMMMMMMMMMMMMMMMMMMMMM,          'MM,:M M'!M'   ");
-                    Console.WriteLine("   ;M MM M: .M        .MMMMMMMMMMMMMMMMMMMMMMMMMM,         'MM'...'M     ");
-                    Console.WriteLine("    M;MM;M :MM      .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.       .MMMMMMMM     ");
-                    Console.WriteLine("    'M;M'M MM      MMMMMM  MMMMMMMMMMMMMMMMM  MMMMMM.    ,,M.M.'MMM'     ");
-                    Console.WriteLine("     MM'MMMM      MMMMMM @@ MMMMMMMMMMMMMMM @@ MMMMMMM.'M''MMMM;MM'      ");
-                    Console.WriteLine("    MM., ,MM     MMMMMMMM  MMMMMMMMMMMMMMMMM  MMMMMMMMM      '.MMM       ");
-                    Console.WriteLine("    'MM;MMMMMMMM.MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.      'MMM       ");
-                    Console.WriteLine("     ''.'MMM'  .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM       MMMM      ");
-                    Console.WriteLine("      MMC      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.      'MMMM     ");
-                    Console.WriteLine("     .MM      :MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM''MMM       MMMMM    ");
-                    Console.WriteLine("     MMM      :M  'MMMMMMMMMMMMM.MMMMM.MMMMMMMMMM'.MM  MM:M.    'MMMMM   ");
-                    Console.WriteLine("    .MMM   ...:M: :M.'MMMMMMMMMMMMMMMMMMMMMMMMM'.M''   MM:MMMMMMMMMMMM'  ");
-                    Console.WriteLine("   AMMM..MMMMM:M.    :M.'MMMMMMMMMMMMMMMMMMMM'.MM'     MM''''''''''''    ");
-                    Console.WriteLine("   MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM                ");
-                    Console.WriteLine("    '''''''''':MM.       'MM!M.'M-M-M-M'M.'MM'        MMM                ");
-                    Console.WriteLine("               MMM.            'MMMM!MMMM'            .MM                ");
-                    Console.WriteLine("                MMM.             '''   ''            .MM'                ");
-                    Console.WriteLine("                 MMM.                               MMM'                 ");
-                    Console.WriteLine("                  MMMM            ,.J.JJJJ.       .MMM'                  ");
+                    Console.WriteLine("                              ,!MMMMMMM!,                     MM MM  ,.                               ");
+                    Console.WriteLine("      ., .M                .MMMMMMMMMMMMMMMM.,          'MM.  MM MM .M'   ██░ ██  ▄▄▄        ██████   ");
+                    Console.WriteLine("    . M: M;  M          .MMMMMMMMMMMMMMMMMMMMMM,          'MM,:M M'!M'   ▓██░ ██▒▒████▄    ▒██    ▒   ");
+                    Console.WriteLine("   ;M MM M: .M        .MMMMMMMMMMMMMMMMMMMMMMMMMM,         'MM'...'M     ▓██░ ██▒▒████▄    ▒██    ▒   ");
+                    Console.WriteLine("    M;MM;M :MM      .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.       .MMMMMMMM     ▒██▀▀██░▒██  ▀█▄  ░ ▓██▄     ");
+                    Console.WriteLine("    'M;M'M MM      MMMMMM  MMMMMMMMMMMMMMMMM  MMMMMM.    ,,M.M.'MMM'     ░▓█ ░██ ░██▄▄▄▄██   ▒   ██▒  ");
+                    Console.WriteLine("     MM'MMMM      MMMMMM @@ MMMMMMMMMMMMMMM @@ MMMMMMM.'M''MMMM;MM'      ░▓█▒░██▓ ▓█   ▓██▒▒██████▒▒  ");
+                    Console.WriteLine("    MM., ,MM     MMMMMMMM  MMMMMMMMMMMMMMMMM  MMMMMMMMM      '.MMM        ▒ ░░▒░▒ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░  ");
+                    Console.WriteLine("    'MM;MMMMMMMM.MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.      'MMM        ▒ ░▒░ ░  ▒   ▒▒ ░░ ░▒  ░ ░  ");
+                    Console.WriteLine("     ''.'MMM'  .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM       MMMM       ░  ░░ ░  ░   ▒   ░  ░  ░    ");
+                    Console.WriteLine("      MMC      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.      'MMMM      ░  ░  ░      ░  ░      ░    ");
+                    Console.WriteLine("     .MM      :MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM''MMM       MMMMM                                                                    ");
+                    Console.WriteLine("     MMM      :M  'MMMMMMMMMMMMM.MMMMM.MMMMMMMMMM'.MM  MM:M.    'MMMMM     ██▓███  ▓█████  ██▀███  ▓█████▄  ██▓▓█████▄  ▒█████      ▐██▌ ");
+                    Console.WriteLine("    .MMM   ...:M: :M.'MMMMMMMMMMMMMMMMMMMMMMMMM'.M''   MM:MMMMMMMMMMMM'   ▓██░  ██▒▓█   ▀ ▓██ ▒ ██▒▒██▀ ██▌▓██▒▒██▀ ██▌▒██▒  ██▒    ▐██▌ ");
+                    Console.WriteLine("   AMMM..MMMMM:M.    :M.'MMMMMMMMMMMMMMMMMMMM'.MM'     MM''''''''''''     ▓██░ ██▓▒▒███   ▓██ ░▄█ ▒░██   █▌▒██▒░██   █▌▒██░  ██▒    ▐██▌ ");
+                    Console.WriteLine("   MMMMMMMMMMM:MM     'M'.M'MMMMMMMMMMMMMM'.MC'M'     .MM                 ▒██▄█▓▒ ▒▒▓█  ▄ ▒██▀▀█▄  ░▓█▄   ▌░██░░▓█▄   ▌▒██   ██░    ▓██▒ ");
+                    Console.WriteLine("    '''''''''':MM.       'MM!M.'M-M-M-M'M.'MM'        MMM                 ▒██▒ ░  ░░▒████▒░██▓ ▒██▒░▒████▓ ░██░░▒████▓ ░ ████▓▒░    ▒▄▄  ");
+                    Console.WriteLine("               MMM.            'MMMM!MMMM'            .MM                 ▒▓▒░ ░  ░░░ ▒░ ░░ ▒▓ ░▒▓░ ▒▒▓  ▒ ░▓   ▒▒▓  ▒ ░ ▒░▒░▒░     ░▀▀▒ ");
+                    Console.WriteLine("                MMM.             '''   ''            .MM'                 ░▒ ░      ░ ░  ░  ░▒ ░ ▒░ ░ ▒  ▒  ▒ ░ ░ ▒  ▒   ░ ▒ ▒░     ░  ░ ");
+                    Console.WriteLine("                 MMM.                               MMM'                  ░░          ░     ░░   ░  ░ ░  ░  ▒ ░ ░ ░  ░ ░ ░ ░ ▒         ░ ");
+                    Console.WriteLine("                  MMMM            ,.J.JJJJ.       .MMM'                               ░  ░   ░        ░     ░     ░        ░ ░      ░    ");
                     Console.WriteLine("                   MMMM.       'JJJJJJJ'JJJM   CMMMMM                    ");
                     Console.WriteLine("                     MMMMM.    'JJJJJJJJ'JJJ .MMMMM'                     ");
                     Console.WriteLine("                       MMMMMMMM.'  'JJJJJ'JJMMMMM'                       ");
                     Console.WriteLine("                         'MMMMMMMMM'JJJJJ JJJJJ'                         ");
                     Console.WriteLine("                            ''MMMMMMJJJJJJJJJJ'                          ");
                     Console.WriteLine("                                    'JJJJJJJJ'							"); 
+  
+
             }
             else
             {
                 Console.Clear();
-                    Console.WriteLine(" _________________________________________________________________________________________");
-                    Console.WriteLine("|                                                                                         | ");
-                    Console.WriteLine("| ██╗  ██╗ █████╗ ███████╗     ██████╗  █████╗ ███╗   ██╗ █████╗ ██████╗  ██████╗     ██╗ |");
-                    Console.WriteLine("| ██║  ██║██╔══██╗██╔════╝    ██╔════╝ ██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔═══██╗    ██║ |");
-                    Console.WriteLine("| ███████║███████║███████╗    ██║  ███╗███████║██╔██╗ ██║███████║██║  ██║██║   ██║    ██║ |");
-                    Console.WriteLine("| ██╔══██║██╔══██║╚════██║    ██║   ██║██╔══██║██║╚██╗██║██╔══██║██║  ██║██║   ██║    ╚═╝ |");
-                    Console.WriteLine("| ██║  ██║██║  ██║███████║    ╚██████╔╝██║  ██║██║ ╚████║██║  ██║██████╔╝╚██████╔╝    ██╗ |");
-                    Console.WriteLine("| ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝ |");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("                        __________________________________________________________________________________________");
+                    Console.WriteLine("         _______________|                                                                                         |_______________ ");
+                    Console.WriteLine("         \\              | ██╗  ██╗ █████╗ ███████╗     ██████╗  █████╗ ███╗   ██╗ █████╗ ██████╗  ██████╗     ██╗ |              / ");
+                    Console.WriteLine("          \\             | ██║  ██║██╔══██╗██╔════╝    ██╔════╝ ██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔═══██╗    ██║ |             /  ");
+                    Console.WriteLine("           \\            | ███████║███████║███████╗    ██║  ███╗███████║██╔██╗ ██║███████║██║  ██║██║   ██║    ██║ |            /   ");
+                    Console.WriteLine("            \\           | ██╔══██║██╔══██║╚════██║    ██║   ██║██╔══██║██║╚██╗██║██╔══██║██║  ██║██║   ██║    ╚═╝ |           /    ");
+                    Console.WriteLine("            /           | ██║  ██║██║  ██║███████║    ╚██████╔╝██║  ██║██║ ╚████║██║  ██║██████╔╝╚██████╔╝    ██╗ |           \\   ");
+                    Console.WriteLine("           /            | ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝ |            \\  ");
+                    Console.WriteLine("          /             |_________________________________________________________________________________________|             \\ ");
+                    Console.WriteLine("         /_______________)                                                                                       (_______________\\");
             }
             Console.ReadKey();
             
