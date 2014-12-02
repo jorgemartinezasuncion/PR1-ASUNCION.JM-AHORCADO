@@ -36,7 +36,7 @@ namespace Ahorcado_1
             }while(!a.setPalabra(palabra));
             do{  //----------------------------------------------------Representar el ahorcado--------------------------------------------//
                 Console.Clear();
-                Console.WriteLine(a.mostrarPenxat());
+                Console.WriteLine(a.mostrarahorcado());
                 Console.WriteLine("\r\n");
                 Console.WriteLine(a.PalabraOculta);
                 try
@@ -47,7 +47,7 @@ namespace Ahorcado_1
             } while (!a.comprobaStat());
 
             Console.Clear();                     // Es netejara la consola cada vegada que se introduisca un caracter, per a que el ahorcado no se acumule.
-            Console.WriteLine(a.mostrarPenxat());
+            Console.WriteLine(a.mostrarahorcado());
             Console.WriteLine("\r\n");
             Console.WriteLine(a.PalabraOculta);
             Console.WriteLine("\r\n");
@@ -87,7 +87,12 @@ namespace Ahorcado_1
                     Console.WriteLine("                       MMMMMMMM.'  'JJJJJ'JJMMMMM'                       ");
                     Console.WriteLine("                         'MMMMMMMMM'JJJJJ JJJJJ'                         ");
                     Console.WriteLine("                            ''MMMMMMJJJJJJJJJJ'                          ");
-                    Console.WriteLine("                                    'JJJJJJJJ'							"); 
+                    Console.WriteLine("                                    'JJJJJJJJ'							");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.Write("Presione cualquier tecla para salir del juego");
   
 
             }
@@ -110,6 +115,11 @@ namespace Ahorcado_1
                     Console.WriteLine("           /            | ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝ |            \\  ");
                     Console.WriteLine("          /             |_________________________________________________________________________________________|             \\ ");
                     Console.WriteLine("         /_______________)                                                                                       (_______________\\");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.Write("Presione cualquier tecla para salir del juego");
             }
             Console.ReadKey();
             

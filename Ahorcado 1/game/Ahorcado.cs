@@ -26,13 +26,13 @@ namespace Ahorcado_1
         {
             vida = 6;
         }
-        public string mostrarPenxat()    //-----------------------------------------Construcció del penxat----------------------------------------//
+        public string mostrarahorcado()    //-----------------------------------------Construccion del ahorcado ----------------------------------------//
         {
-            string penxat = "";
+            string ahorcado = "";
             switch (this.vida)
             {
                 case 0:
-                    penxat = "_________________ \r\n" +
+                    ahorcado = "_________________ \r\n" +
                             "  |            |  \r\n" +
                             "  |            O  \r\n" +
                             "  |           /|\\ \r\n" +
@@ -42,7 +42,7 @@ namespace Ahorcado_1
                             " /|\\              \r\n";
                     break;
                 case 1:
-                    penxat = "_________________ \r\n" +
+                    ahorcado = "_________________ \r\n" +
                             "  |            |  \r\n" +
                             "  |            O  \r\n" +
                             "  |           /|\\ \r\n" +
@@ -52,7 +52,7 @@ namespace Ahorcado_1
                             " /|\\              \r\n";
                     break;
                 case 2:
-                    penxat = "_________________ \r\n" +
+                    ahorcado = "_________________ \r\n" +
                             "  |            |  \r\n" +
                             "  |            O  \r\n" +
                             "  |           /|\\ \r\n" +
@@ -62,7 +62,7 @@ namespace Ahorcado_1
                             " /|\\              \r\n";
                     break;
                 case 3:
-                    penxat = "_________________ \r\n" +
+                    ahorcado = "_________________ \r\n" +
                             "  |            |  \r\n" +
                             "  |            O  \r\n" +
                             "  |           /|  \r\n" +
@@ -72,7 +72,7 @@ namespace Ahorcado_1
                             " /|\\              \r\n";
                     break;
                 case 4:
-                    penxat = "_________________ \r\n" +
+                    ahorcado = "_________________ \r\n" +
                             "  |            |  \r\n" +
                             "  |            O  \r\n" +
                             "  |            |  \r\n" +
@@ -82,7 +82,7 @@ namespace Ahorcado_1
                             " /|\\              \r\n";
                     break;
                 case 5:
-                    penxat = "_________________ \r\n" +
+                    ahorcado = "_________________ \r\n" +
                             "  |            |  \r\n" +
                             "  |            O  \r\n" +
                             "  |               \r\n" +
@@ -92,7 +92,7 @@ namespace Ahorcado_1
                             " /|\\              \r\n";
                     break;
                 case 6:
-                    penxat = "_________________ \r\n" +
+                    ahorcado = "_________________ \r\n" +
                             "  |            |  \r\n" +
                             "  |               \r\n" +
                             "  |               \r\n" +
@@ -102,7 +102,7 @@ namespace Ahorcado_1
                             " /|\\              \r\n";
                     break;
             }
-            return penxat;
+            return ahorcado;
         }
         public bool setPalabra(string palabra) //----------------------------Part de la representació de la paraula oculta------------------------//
         {
