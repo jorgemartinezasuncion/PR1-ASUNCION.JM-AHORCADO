@@ -21,6 +21,7 @@ namespace Ahorcado_1
              Console.WriteLine("_  ___ |  __  / / /_/ /_  _, _// /___  _  ___ |  /_/ // /_/ /  ");
              Console.WriteLine("/_/  |_/_/ /_/  \\____/ /_/ |_| \\____/  /_/  |_/_____/ \\____/   ");
                                                               
+
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("");
