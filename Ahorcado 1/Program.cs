@@ -12,24 +12,29 @@ namespace Ahorcado_1
 
 
         {
-            Console.SetWindowSize(170,58);
+            Console.SetWindowSize(170,58);//-------------------------------Introducción del juego-----------------------------------------//
         
             Console.ForegroundColor = ConsoleColor.Green;
-             Console.WriteLine(" _____________  ______________________________________________ ");
-             Console.WriteLine("___    |__  / / /_  __ \\__  __ \\_  ____/__    |__  __ \\_  __ \\ ");
-             Console.WriteLine("__  /| |_  /_/ /_  / / /_  /_/ /  /    __  /| |_  / / /  / / / ");
-             Console.WriteLine("_  ___ |  __  / / /_/ /_  _, _// /___  _  ___ |  /_/ // /_/ /  ");
-             Console.WriteLine("/_/  |_/_/ /_/  \\____/ /_/ |_| \\____/  /_/  |_/_____/ \\____/   ");
-                                                              
+            Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("                                                      █████╗ ██╗  ██╗ ██████╗ ██████╗  ██████╗ █████╗ ██████╗  ██████╗ ");
+            Console.WriteLine("                                                     ██╔══██╗██║  ██║██╔═══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔═══██╗");
+            Console.WriteLine("                                                     ███████║███████║██║   ██║██████╔╝██║     ███████║██║  ██║██║   ██║");
+            Console.WriteLine("                                                     ██╔══██║██╔══██║██║   ██║██╔══██╗██║     ██╔══██║██║  ██║██║   ██║");
+            Console.WriteLine("                                                     ██║  ██║██║  ██║╚██████╔╝██║  ██║╚██████╗██║  ██║██████╔╝╚██████╔╝");
+            Console.WriteLine("                                                     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ");
+            Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
             Console.WriteLine("");
             Console.WriteLine("");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Juega al Ahorcado en el modo 1 Jugador vs 1 Jugador!");
             Console.WriteLine("");
 
           
 
             Ahorcado a = new Ahorcado();
-            Console.WriteLine("Escribe la palabra a jugar:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Escribe la palabra con la que deseas jugar:");
             string palabra;
 
             do{
@@ -37,6 +42,7 @@ namespace Ahorcado_1
             }while(!a.setPalabra(palabra));
             do{  //----------------------------------------------------Representar el ahorcado--------------------------------------------//
                 Console.Clear();
+
                 Console.WriteLine(a.mostrarahorcado());
                 Console.WriteLine("\r\n");
                 Console.WriteLine(a.PalabraOculta);
@@ -47,13 +53,14 @@ namespace Ahorcado_1
                 catch (Exception ae){ }
             } while (!a.comprobaStat());
 
-            Console.Clear();                     // Es netejara la consola cada vegada que se introduisca un caracter, per a que el ahorcado no se acumule.
+            Console.Clear(); // Es netejara la consola cada vegada que se introduisca un caracter, per a que el ahorcado no se acumule.
             Console.WriteLine(a.mostrarahorcado());
             Console.WriteLine("\r\n");
             Console.WriteLine(a.PalabraOculta);
             Console.WriteLine("\r\n");
             if (a.Vida == 0)
             {
+                    
                     Console.Clear();
                     Console.WriteLine("");
                     Console.WriteLine("");
@@ -61,6 +68,7 @@ namespace Ahorcado_1
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.Red;
                                                                            
                     Console.WriteLine("                              ,!MMMMMMM!,                     MM MM  ,.                               ");
                     Console.WriteLine("      ., .M                .MMMMMMMMMMMMMMMM.,          'MM.  MM MM .M'   ██░ ██  ▄▄▄        ██████   ");
@@ -93,33 +101,36 @@ namespace Ahorcado_1
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Presione cualquier tecla para salir del juego");
-  
+                    
 
             }
             else
             {
                 Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("");
-                    Console.WriteLine("                        __________________________________________________________________________________________");
-                    Console.WriteLine("         _______________|                                                                                         |_______________ ");
-                    Console.WriteLine("         \\              | ██╗  ██╗ █████╗ ███████╗     ██████╗  █████╗ ███╗   ██╗ █████╗ ██████╗  ██████╗     ██╗ |              / ");
-                    Console.WriteLine("          \\             | ██║  ██║██╔══██╗██╔════╝    ██╔════╝ ██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔═══██╗    ██║ |             /  ");
-                    Console.WriteLine("           \\            | ███████║███████║███████╗    ██║  ███╗███████║██╔██╗ ██║███████║██║  ██║██║   ██║    ██║ |            /   ");
-                    Console.WriteLine("            \\           | ██╔══██║██╔══██║╚════██║    ██║   ██║██╔══██║██║╚██╗██║██╔══██║██║  ██║██║   ██║    ╚═╝ |           /    ");
-                    Console.WriteLine("            /           | ██║  ██║██║  ██║███████║    ╚██████╔╝██║  ██║██║ ╚████║██║  ██║██████╔╝╚██████╔╝    ██╗ |           \\   ");
-                    Console.WriteLine("           /            | ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝ |            \\  ");
-                    Console.WriteLine("          /             |_________________________________________________________________________________________|             \\ ");
-                    Console.WriteLine("         /_______________)                                                                                       (_______________\\");
+                    Console.WriteLine("                                        __________________________________________________________________________________________");
+                    Console.WriteLine("                         _______________|                                                                                         |_______________ ");
+                    Console.WriteLine("                         \\              | ██╗  ██╗ █████╗ ███████╗     ██████╗  █████╗ ███╗   ██╗ █████╗ ██████╗  ██████╗     ██╗ |              / ");
+                    Console.WriteLine("                          \\             | ██║  ██║██╔══██╗██╔════╝    ██╔════╝ ██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔═══██╗    ██║ |             /  ");
+                    Console.WriteLine("                           \\            | ███████║███████║███████╗    ██║  ███╗███████║██╔██╗ ██║███████║██║  ██║██║   ██║    ██║ |            /   ");
+                    Console.WriteLine("                            \\           | ██╔══██║██╔══██║╚════██║    ██║   ██║██╔══██║██║╚██╗██║██╔══██║██║  ██║██║   ██║    ╚═╝ |           /    ");
+                    Console.WriteLine("                            /           | ██║  ██║██║  ██║███████║    ╚██████╔╝██║  ██║██║ ╚████║██║  ██║██████╔╝╚██████╔╝    ██╗ |           \\   ");
+                    Console.WriteLine("                           /            | ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝  ╚═════╝     ╚═╝ |            \\  ");
+                    Console.WriteLine("                          /             |_________________________________________________________________________________________|             \\ ");
+                    Console.WriteLine("                         /_______________)                                                                                       (_______________\\");
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Presione cualquier tecla para salir del juego");
             }
             Console.ReadKey();
